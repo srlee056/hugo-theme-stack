@@ -9,7 +9,7 @@ $query -}} {{- $archivesPage := index $query 0 -}}
 	$context.Site.Params.mainSections }} {{ $notHidden := where
 	$context.Site.RegularPages "Params.hidden" "!=" true }} {{ $filtered :=
 	($pages | intersect $notHidden) }} {{ $archives := $filtered.GroupByDate
-	"2006 January" }}
+	"2006" }}
 
 	<div class="widget-archive--list">
 		{{ range $index, $item := first (add $limit 1) ($archives) }} {{- $id :=
