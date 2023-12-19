@@ -10,7 +10,7 @@
         data-reactions-enabled="{{- default 1 .reactionsEnabled -}}"
         data-emit-metadata="{{- default 0 .emitMetadata -}}"
         data-input-position="{{- default `top` .inputPosition -}}"
-        data-theme="preferred_color_scheme"
+        data-theme="{{- default `light_high_contrast` .lightTheme -}}"
         data-lang="{{- default `en` .lang -}}"
         crossorigin="anonymous"
         async
