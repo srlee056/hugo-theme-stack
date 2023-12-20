@@ -23,7 +23,6 @@
                 width: 100%;
                 height: 150px;
                 object-fit: cover;
-                font-size: 0; // Do not show alt text when image is loaded
 
                 @include respond(md) {
                     height: 200px;
