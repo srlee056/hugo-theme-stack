@@ -40,11 +40,15 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
 *   Global font family
 */
 :root {
-    --sys-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Droid Sans", "Helvetica Neue";
-    --zh-font-family: "PingFang SC", "Hiragino Sans GB", "Droid Sans Fallback", "Microsoft YaHei";
+    --sys-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+        "Droid Sans", "Helvetica Neue";
+    --zh-font-family: "PingFang SC", "Hiragino Sans GB", "Droid Sans Fallback",
+        "Microsoft YaHei";
 
-    --base-font-family: "Lato", var(--sys-font-family), var(--zh-font-family), sans-serif;
-    --code-font-family: Menlo, Monaco, Consolas, "Courier New", var(--zh-font-family), monospace;
+    --base-font-family: "Lato", var(--sys-font-family), var(--zh-font-family),
+        sans-serif;
+    --code-font-family: Menlo, Monaco, Consolas, "Courier New",
+        var(--zh-font-family), monospace;
 }
 
 /*
@@ -61,20 +65,20 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
 
     --card-border-radius: 10px;
 
-    --card-padding: 20px;
+    --card-padding: 10px;
 
     @include respond(md) {
-        --card-padding: 25px;
+        --card-padding: 12px;
     }
 
     @include respond(xl) {
-        --card-padding: 30px;
+        --card-padding: 15px;
     }
 
-    --small-card-padding: 25px 20px;
+    --small-card-padding: 12px 10px;
 
     @include respond(md) {
-        --small-card-padding: 25px;
+        --small-card-padding: 12px;
     }
 
     &[data-scheme="dark"] {
@@ -141,10 +145,14 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
 *   Thanks to https://www.figma.com/community/plugin/744987207861965946/Shadow-picker
 */
 :root {
-    --shadow-l1: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 2px rgba(0, 0, 0, 0.06), 0px 0px 1px rgba(0, 0, 0, 0.04);
-    --shadow-l2: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
-    --shadow-l3: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
-    --shadow-l4: 0px 24px 32px rgba(0, 0, 0, 0.04), 0px 16px 24px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.04),
+    --shadow-l1: 0px 4px 8px rgba(0, 0, 0, 0.04),
+        0px 0px 2px rgba(0, 0, 0, 0.06), 0px 0px 1px rgba(0, 0, 0, 0.04);
+    --shadow-l2: 0px 10px 20px rgba(0, 0, 0, 0.04),
+        0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+    --shadow-l3: 0px 10px 20px rgba(0, 0, 0, 0.04),
+        0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+    --shadow-l4: 0px 24px 32px rgba(0, 0, 0, 0.04),
+        0px 16px 24px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.04),
         0px 0px 1px rgba(0, 0, 0, 0.04);
 }
 
